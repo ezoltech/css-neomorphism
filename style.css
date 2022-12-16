@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+    /* margin: 0;
+    padding: 0; */
+    font-family: "roboto", sans-serif;
+}
+
+body {
+    background: #333;
+}
+
+
+/* main boxes  */
+
+.box1 {
+    position: relative;
+    width: 1000px;
+    height: 80px;
+    top: 20px;
+    right: 20px;
+    left: 100px;
+    background: #333;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.box2 {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: 50px;
+    right: 20px;
+    left: 100px;
+    background: #333;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.box3 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 139px;
+    right: 20px;
+    left: 400px;
+    background: #333;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.box4 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 139px;
+    right: 30px;
+    left: 680px;
+    background: #333;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.box5 {
+    position: absolute;
+    width: 100px;
+    height: 548px;
+    top: 130px;
+    right: 30px;
+    left: 1008px;
+    background: #333;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.box6 {
+    position: relative;
+    width: 780px;
+    height: 300px;
+    top: 90px;
+    bottom: 20px;
+    right: 20px;
+    left: 100px;
+    background: #333;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.box7 {
+    position: relative;
+    width: 1000px;
+    height: 80px;
+    top: 130px;
+    bottom: 100px;
+    right: 20px;
+    left: 100px;
+    background: #333;
+    text-align: center;
+    transition: 0.5s;
+}
+
+
+/* .box1:hover {
+    height: 450px;
+} */
+
+.box1 .lines {
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+
+.box2 .lines {
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+
+.box3 .lines {
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+
+.box4 .lines {
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+
+.box5 .lines {
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+
+.box6 .lines {
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+
+.box7 .lines {
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+
+
+/* the before group */
+
+.box1 .lines::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 90px;
+    background: linear-gradient( transparent, #45f3ff, #45f3ff, #45f3ff, transparent);
+    animation: animate 4s linear infinite;
+}
+
+.box2 .lines::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 90px;
+    background: linear-gradient( transparent, #fc466b, #fc466b, #fc466b, transparent);
+    animation: animate 4s linear infinite;
+}
+
+.box3 .lines::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 90px;
+    background: linear-gradient( transparent, #fce846, #fce846, #fce846, transparent);
+    animation: animate 4s linear infinite;
+}
+
+.box4 .lines::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 90px;
+    background: linear-gradient( transparent, #0fd029, #0fd029, #0fd029, transparent);
+    animation: animate 4s linear infinite;
+}
+
+.box5 .lines::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 90px;
+    background: linear-gradient( transparent, #0f1fd0, #0f1fd0, #0f1fd0, transparent);
+    animation: animate 4s linear infinite;
+}
+
+.box6 .lines::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 90px;
+    background: linear-gradient( transparent, #aed00f, #aed00f, #aed00f, transparent);
+    animation: animate 4s linear infinite;
+}
+
+.box7 .lines::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 90px;
+    background: linear-gradient( transparent, #ee7f0e, #ee7f0e, #ee7f0e, transparent);
+    animation: animate 4s linear infinite;
+}
+
+
+/* the after group */
+
+.box1 .lines::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #292929;
+}
+
+.box2 .lines::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #292929;
+}
+
+.box3 .lines::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #292929;
+}
+
+.box4 .lines::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #292929;
+}
+
+.box5 .lines::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #292929;
+}
+
+.box6 .lines::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #292929;
+}
+
+.box7 .lines::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #292929;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+/* .box1:hover {
+    background: radial-gradient( circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+} */
